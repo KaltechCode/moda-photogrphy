@@ -1,7 +1,7 @@
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
-@import "../../node_modules/react-modal-video/scss/modal-video.scss";
-@import "swiper/css/bundle";
-@import "../../public/styles/scss/main.scss";
+@use "../../node_modules/bootstrap/scss/bootstrap.scss";
+// @import "../../node_modules/react-modal-video/scss/modal-video.scss";
+@use "swiper/css/bundle";
+@use "../../public/styles/scss/main.scss";
 .top-bar-container {
   background-color: #111;
   width: 100%;
