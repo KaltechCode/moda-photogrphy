@@ -46,7 +46,7 @@ const About = () => {
               </p> */}
             </div>
           </div>
-          <div className="col-xl-2 col-lg-6 col-md-6 order-1">
+          <div className="d-none d-md-flex col-xl-2 col-lg-6 col-md-6 order-1">
             <div className="tp-about-2-right-thumb text-end">
               <img
                 data-speed="auto"
