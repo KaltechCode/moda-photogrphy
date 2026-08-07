@@ -220,11 +220,11 @@ export default function InstagramArea() {
             />
           </div>
         ))}
-        <div className="tp-instagram-thumb-inner-8 d-none d-xl-block">
+        {/* <div className="tp-instagram-thumb-inner-8 d-none d-xl-block">
           <a href="#">
             <i className="fa-brands fa-instagram"></i>
           </a>
-        </div>
+        </div> */}
         <div className="tp-instagram-thumb">
           {/* <Image src={inst_8} alt="inst-img" */}
 
