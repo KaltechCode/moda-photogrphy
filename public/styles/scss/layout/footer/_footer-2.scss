@@ -5,6 +5,11 @@
 /*----------------------------------------*/
 
 .tp-footer-2 {
+  &-area {
+    @media screen and (min-width: 1200px) and (max-width: 2500px) {
+      margin-top: 15rem;
+    }
+  }
   &-widget {
     &-logo {
       margin-bottom: 30px;

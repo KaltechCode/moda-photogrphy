@@ -216,14 +216,13 @@
     font-size: 130px;
     font-weight: 500;
     line-height: 1;
-    letter-spacing: -5.2px;
-    color: var(--tp-common-white);
+    color: var(--tp-common-black);
     margin-bottom: 10px;
     @media #{$md} {
       font-size: 90px;
     }
     @media #{$xs} {
-      font-size: 57px;
+      font-size: 28px;
     }
     & span {
       margin-left: 160px;

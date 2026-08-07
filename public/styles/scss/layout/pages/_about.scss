@@ -6,17 +6,22 @@
 
 .tp-about-2 {
   &-section-title {
+    @media #{$xs} {
+      font-size: 24px;
+      text-align: center;
+    }
     color: var(--tp-common-black);
-    font-size: 60px;
+    font-size: 28px;
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: -2.8px;
-    @media #{$xs} {
-      font-size: 38px;
-      text-align: center;
-    }
+
     @media screen and (min-width: "500px") and (max-width: "976px") {
       font-size: clamp(45px, 3vw, 60px);
+      text-align: center;
+    }
+    @media screen and (min-width: "967px") {
+      font-size: clamp(50px, 3vw, 90px);
       text-align: center;
     }
   }

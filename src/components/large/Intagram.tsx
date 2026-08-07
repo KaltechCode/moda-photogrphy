@@ -228,7 +228,8 @@ export default function InstagramArea() {
         <div className="tp-instagram-thumb">
           {/* <Image src={inst_8} alt="inst-img" */}
 
-          <img src={inst_7} alt="inst-img" className="" />
+          <img src={inst_7} alt="inst-img" className="dis-img-inline" />
+          <img src="/screenshot.png" alt="" className="d-img-none" />
         </div>
         <div className="tp-instagram-content-wrap text-start">
           <div className="tp-instagram-title-box">
@@ -237,10 +238,10 @@ export default function InstagramArea() {
           </div>
           <div className="tp-instagram-content">
             <p>
-              Become a part of our stories! <br /> Join MODA Studio..
+              Become part of our story! <br /> Join MODA Studio..
             </p>
             <a className="tp-btn-white background-black" href="#">
-              Follow Us
+              Join Us
               <span>
                 <Icon name="leaf" />
               </span>

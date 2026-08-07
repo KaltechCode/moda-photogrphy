@@ -53,3 +53,28 @@
     width: max-content;
   }
 }
+
+.d-img-none {
+  @media screen and (min-width: 1200px) {
+    display: none !important;
+  }
+}
+.dis-img-inline,
+.tp-instagram-content-wrap {
+  @media screen and (max-width: 1999px) {
+    display: none !important;
+  }
+  @media screen and (min-width: 1200px) {
+    display: block !important;
+  }
+}
+
+.footer-action-btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+  text-align: center;
+  color: #fff;
+  background-color: #f5f7f526;
+  margin-top: 15px;
+}

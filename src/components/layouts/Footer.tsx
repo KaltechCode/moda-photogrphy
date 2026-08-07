@@ -80,7 +80,8 @@ export default function Footer({ whiteFooter = false, topCls = "" }: IProps) {
                       href="https://www.google.com/maps/@23.8223596,90.3656686,15z?entry=ttu"
                       target="_blank"
                     >
-                      1919 Ninth ave N , Nashville , Tennessee, Tn, 37208
+                      1919 Ninth ave N ,<br /> Nashville , <br /> Tennessee,{" "}
+                      <br /> Tn, 37208
                     </a>
                   </span>
                 </div>
@@ -106,13 +107,9 @@ export default function Footer({ whiteFooter = false, topCls = "" }: IProps) {
                   <form action="#">
                     <div className="tp-footer-2-input p-relative">
                       <input type="text" placeholder="Enter your email..." />
-                      <button>
-                        {/* <RightArrow
-                          clr={whiteFooter ? "currentcolor" : "#F3F3F4"}
-                        /> */}
-                      </button>
                     </div>
                   </form>
+                  <button className="footer-action-btn">Schedule a tour</button>
                 </div>
               </div>
             </div>
