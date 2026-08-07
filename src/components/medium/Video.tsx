@@ -17,11 +17,12 @@ const Video = () => {
                 playsInline={true}
               >
                 <source
-                  src="https://html.hixstudio.net/videos/liko/liko-4.mp4"
+                  // src="https://player.cloudinary.com/embed/?cloud_name=dxjqb74cz&public_id=Mado_reel_xvzh9c"
+                  src="https://res.cloudinary.com/dxjqb74cz/video/upload/v1786071039/Mado_reel_xvzh9c.mp4"
                   type="video/mp4"
                 />
               </video>
-              <div className="tp-video-content text-center">
+              {/* <div className="tp-video-content text-center">
                 <span className="tp-video-subtitle">
                   <span>
                     <Icon name="leaf" />
@@ -33,7 +34,7 @@ const Video = () => {
                   Our work is best experienced in motion. {"Don't"}
                   forget to put on your headphones.
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

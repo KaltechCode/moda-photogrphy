@@ -90,7 +90,7 @@ const HomePage = () => {
           </main>
 
           {/* footer area */}
-          {/* <Footer /> */}
+          <Footer />
           {/* footer area */}
         </div>
       </div>

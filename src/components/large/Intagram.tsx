@@ -11,21 +11,21 @@ import { Icon } from "../small/Icon";
 
 import inst_1 from "@/assets/photo/project-one.png";
 import inst_2 from "@/assets/photo/project-two.png";
-import inst_3 from "@/assets/photo/project-three.png";
-import inst_4 from "@/assets/photo/project-four.png";
-import inst_5 from "@/assets/photo/project-five.png";
-import inst_6 from "@/assets/photo/project-six.png";
-import inst_7 from "@/assets/photo/project-seven.png";
+const inst_3 = "/images/Image-3.png";
+const inst_4 = "/images/Image-4.png";
+const inst_5 = "/images/Image-5.png";
+const inst_6 = "/images/Image-6.png";
+const inst_7 = "/images/Img1.png";
 
 export default function InstagramArea() {
   const instagram_images = [
-    { id: 1, img: inst_1 },
-    { id: 2, img: inst_2 },
+    // { id: 1, img: inst_1 },
+    // { id: 2, img: inst_2 },
     { id: 3, img: inst_3 },
     { id: 4, img: inst_4 },
     { id: 5, img: inst_5 },
     { id: 6, img: inst_6 },
-    { id: 7, img: inst_7 },
+    // { id: 7, img: inst_7 },
   ];
   const refContainer = useRef(null);
 
@@ -210,16 +210,13 @@ export default function InstagramArea() {
     <div className="tp-instagram-area tp-instagram-ptb text-center">
       <div className="tp-instagram-thumb-wrap p-relative">
         {instagram_images.map((item) => (
-          <div
-            key={item.id}
-            className={`tp-instagram-thumb-inner-${item.id} d-none d-xl-block`}
-          >
-            <Image
+          <div key={item.id} className={`tp-instagram-thumb-inner-${item.id}`}>
+            <img
               src={item.img}
               alt="inst-img"
               width={100}
               height={100}
-              className="w-50 h-50"
+              style={{ width: "100%", height: "100%" }}
             />
           </div>
         ))}
@@ -230,16 +227,17 @@ export default function InstagramArea() {
         </div>
         <div className="tp-instagram-thumb">
           {/* <Image src={inst_8} alt="inst-img" */}
-          <Image src={inst_7} alt="inst-img" className="" />
+
+          <img src={inst_7} alt="inst-img" className="" />
         </div>
         <div className="tp-instagram-content-wrap text-start">
           <div className="tp-instagram-title-box">
             <span className="tp-instagram-subtitle">INSTAGRAM</span>
-            <h4 className="tp-instagram-title">@likoagency</h4>
+            <h4 className="tp-instagram-title">@modastudio</h4>
           </div>
           <div className="tp-instagram-content">
             <p>
-              Become a part of our stories! <br /> Join the adventure.
+              Become a part of our stories! <br /> Join MODA Studio..
             </p>
             <a className="tp-btn-white background-black" href="#">
               Follow Us

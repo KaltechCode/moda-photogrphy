@@ -37,4 +37,19 @@
   display: flex;
   justify-content: flex-end;
   gap: 15px;
+  button {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #111;
+  }
+}
+
+.footer-box-one,
+.footer-box-two,
+.footer-box-three {
+  width: 100%;
+  @media screen and (min-width: 1200px) {
+    width: max-content;
+  }
 }

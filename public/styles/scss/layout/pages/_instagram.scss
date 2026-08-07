@@ -63,31 +63,66 @@
       &-3 {
         position: absolute;
         bottom: 0;
-        right: -74%;
+        height: 65px;
+        position: absolute;
+        top: 25px;
+        right: -29px;
+
+        @media screen and (min-width: 600px) and (max-width: 1200px) {
+        }
+        @media screen and (min-width: 1200px) {
+          right: -74%;
+          height: 350px;
+          aspect-ratio: 1/1;
+        }
         & img {
           border-radius: 10px;
         }
       }
       &-4 {
         position: absolute;
-        bottom: -42%;
-        right: -42%;
+        top: 32%;
+        height: 55px;
+        right: -2%;
+
+        @media screen and (min-width: 600px) and (max-width: 1200px) {
+        }
+
+        @media screen and (min-width: 1200px) {
+          right: -45%;
+          height: 200px;
+          top: 70%;
+          aspect-ratio: 1/1;
+        }
         & img {
           border-radius: 10px;
         }
       }
       &-5 {
         position: absolute;
-        bottom: -26%;
-        right: 0%;
+        top: 48%;
+        right: 16%;
+        height: 40px;
+        @media screen and (min-width: 1200px) {
+          right: -5%;
+          height: 120px;
+          top: 105%;
+          aspect-ratio: 1/1;
+        }
         & img {
           border-radius: 10px;
         }
       }
       &-6 {
         position: absolute;
-        bottom: 0%;
-        left: -25%;
+        top: 34%;
+        left: -20px;
+        height: 60px;
+        @media screen and (min-width: 1200px) {
+          left: -35%;
+          height: 138px;
+          top: 78%;
+        }
         & img {
           border-radius: 10px;
         }
@@ -104,6 +139,7 @@
         position: absolute;
         top: 7%;
         right: -25%;
+        display: none;
         & a {
           height: 96px;
           width: 96px;
