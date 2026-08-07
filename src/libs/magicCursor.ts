@@ -1,7 +1,9 @@
 import { gsap, Power2 } from "gsap";
-import $ from "jquery";
 
-export default function cursorAnimation() {
+export default async function cursorAnimation() {
+  if (typeof window === "undefined") return;
+
+  const { default: $ } = await import("jquery");
   if (typeof window !== "undefined") {
     if ($("body").not(".is-mobile").hasClass("tp-magic-cursor")) {
       if ($("a.tp-magnetic-item").length) {

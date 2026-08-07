@@ -1,8 +1,11 @@
 import { gsap } from "gsap";
-import $ from "jquery";
 import { ScrollTrigger } from "@/libs/plugins";
 
-function instagramAnim() {
+async function instagramAnim() {
+  if (typeof window === "undefined") return;
+
+  const { default: $ } = await import("jquery");
+
   if (!(gsap as any)._gsap || !(gsap as any).plugins?.ScrollTrigger) {
     try {
       gsap.registerPlugin(ScrollTrigger);

@@ -1,8 +1,7 @@
 import { gsap, Power2 } from "gsap";
-import $ from "jquery";
 import { SplitText } from "@/libs/plugins";
 
-function heroTitleAnim() {
+async function heroTitleAnim() {
   const heroArea = document.querySelector(".tp-hero-2-area");
   if (heroArea) {
     gsap.set(".tp-hero-2-title.text-1", { x: 300 });
@@ -51,7 +50,10 @@ function heroBgAnimation() {
 }
 
 // bounce animation
-function bounceAnimation() {
+async function bounceAnimation() {
+  if (typeof window === "undefined") return;
+
+  const { default: $ } = await import("jquery");
   const bounce = document.querySelectorAll(".tp-btn-bounce");
   if (bounce.length > 0) {
     gsap.from(bounce, { y: -100, opacity: 0 });
@@ -123,7 +125,10 @@ function charAnimation() {
 }
 
 // fade left animation
-function fadeAnimation() {
+async function fadeAnimation() {
+  if (typeof window === "undefined") return;
+
+  const { default: $ } = await import("jquery");
   if ($(".tp_fade_bottom").length > 0) {
     gsap.set(".tp_fade_bottom", { y: 100, opacity: 0 });
     const fadeArray = gsap.utils.toArray(".tp_fade_bottom");
@@ -435,7 +440,10 @@ function revelAnimationTwo() {
   }
 }
 
-function zoomAnimation() {
+async function zoomAnimation() {
+  if (typeof window === "undefined") return;
+
+  const { default: $ } = await import("jquery");
   // zoom in
   if ($(".anim-zoomin").length > 0) {
     $(".anim-zoomin").each(function () {
@@ -466,7 +474,10 @@ function zoomAnimation() {
   }
 }
 
-function titleAnimation() {
+async function titleAnimation() {
+  if (typeof window === "undefined") return;
+
+  const { default: $ } = await import("jquery");
   if ($(".tp_title_anim").length > 0) {
     let splitTitleLines = gsap.utils.toArray(".tp_title_anim");
     splitTitleLines.forEach((splitTextLine: any) => {

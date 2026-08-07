@@ -21,7 +21,7 @@ import Service from "../medium/service";
 import ShowSection from "../medium/showcaseworks";
 import Instagram from "../large/Intagram";
 import Footer from "../layouts/Footer";
-import { videoAnimOne, videoAnimTwo } from "@/utils/gsap/video-anim";
+import { videoAnimTwo } from "@/utils/gsap/video-anim";
 import { panelOneAnimation } from "@/utils/gsap/panel-animation";
 import { instagramAnim } from "@/utils/gsap/instagram-anim";
 // import { instagramAnim } from "@/utils/gsap/instagram-anim";
