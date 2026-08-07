@@ -22,7 +22,7 @@ const Header = () => {
       <header className="tp-header-height" ref={headerRef}>
         <div
           id="header-sticky"
-          className={`tp-header-area tp-header-mob-space tp-transparent z-index-9 ${sticky ? "header-sticky" : ""}`}
+          className={`tp-header-area tp-transparent z-index-9 ${sticky ? "header-sticky" : ""}`}
         >
           <div className="top-bar-container">
             <div className="top-bar-container-content">
@@ -59,7 +59,10 @@ const Header = () => {
               </div>
               <div className="col-xl-2 col-lg col-6 flex gap-3">
                 <div className="tp-header-bar text-end flex icon-user-con">
-                  <button className="tp-offcanvas-open-btn" onClick={() => {}}>
+                  <button
+                    className="tp-offcanvas-open-btn bg-button"
+                    onClick={() => {}}
+                  >
                     <Icon name="user" size={28} color="#fff" />
                   </button>
 

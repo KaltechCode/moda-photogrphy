@@ -25,13 +25,13 @@ async function panelOneAnimation() {
 
       // --- SETUP VARIABLES BASED ON EXCLUSIVE RANGES ---
       let pinValue = false;
-      let startValue: string | number = "top 40%";
+      let startValue: string | number = "top 20%";
       let endValue: string | number | ((st: any) => string | number) =
         "bottom 75%";
       let heightValue = 720;
 
       if (isDesktop || isPortrait) {
-        startValue = `top ${window.innerHeight - 650}`;
+        startValue = `top ${window.innerHeight - 700}`;
         endValue = `+=${window.innerHeight - 600}`;
         heightValue = 720;
       } else if (isLaptop) {
@@ -72,7 +72,7 @@ async function panelOneAnimation() {
             // pin: pinValue, // Use the determined pin value
             start: startValue, // Use the determined start value
             scrub: 1,
-            pin: pinValue,
+            pin: true,
             end: endValue as any, // Use the determined end value
           },
         });

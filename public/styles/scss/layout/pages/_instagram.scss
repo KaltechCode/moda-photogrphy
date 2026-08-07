@@ -23,6 +23,10 @@
     @media #{$xs} {
       height: 100%;
     }
+    @media screen and (max-width: 1200px) {
+      height: max-content;
+      padding: 6rem 0;
+    }
   }
   &-thumb {
     height: 100%;
@@ -30,6 +34,11 @@
     position: relative;
     background-size: cover;
     background-position: 50%;
+    @media screen and (orientation: landscape) and (max-height: 450px) {
+      width: 45%;
+      position: static;
+      margin: 0;
+    }
     & img {
       height: 100%;
       width: 100%;
@@ -42,6 +51,14 @@
       margin-top: 1500px;
       display: inline-block;
       margin: 0 auto;
+      @media screen and (orientation: landscape) and (max-height: 450px) {
+        width: 95%;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        height: 85%;
+        margin-top: 10%;
+      }
     }
     &-inner {
       &-1 {
@@ -75,6 +92,9 @@
           height: 350px;
           aspect-ratio: 1/1;
         }
+        @media screen and (orientation: landscape) and (max-height: 450px) {
+          display: none;
+        }
         & img {
           border-radius: 10px;
         }
@@ -94,6 +114,9 @@
           top: 70%;
           aspect-ratio: 1/1;
         }
+        @media screen and (orientation: landscape) and (max-height: 450px) {
+          display: none;
+        }
         & img {
           border-radius: 10px;
         }
@@ -109,6 +132,10 @@
           top: 105%;
           aspect-ratio: 1/1;
         }
+        @media screen and (orientation: landscape) and (max-height: 450px) {
+          display: none;
+        }
+
         & img {
           border-radius: 10px;
         }
@@ -116,12 +143,16 @@
       &-6 {
         position: absolute;
         top: 34%;
-        left: -20px;
+        left: -7px;
         height: 60px;
+
         @media screen and (min-width: 1200px) {
           left: -35%;
           height: 138px;
           top: 78%;
+        }
+        @media screen and (orientation: landscape) and (max-height: 450px) {
+          display: none;
         }
         & img {
           border-radius: 10px;
@@ -131,6 +162,9 @@
         position: absolute;
         bottom: 25%;
         left: -59%;
+        @media screen and (orientation: landscape) and (max-height: 450px) {
+          display: none;
+        }
         & img {
           border-radius: 10px;
         }
@@ -171,14 +205,26 @@
     @media #{$xs} {
       font-size: 50px;
     }
+
+    @media screen and (orientation: landscape) and (max-height: 450px) {
+      font-size: 40px;
+    }
   }
   &-content-wrap {
     position: absolute;
     bottom: -340px;
     left: -150px;
-    @media #{$lg,$md} {
-      left: 60px;
+
+    @media screen and (orientation: landscape) and (max-height: 450px) {
+      position: static;
     }
+
+    @media screen and (max-width: 1200px) {
+      position: static;
+      margin: 50px auto 0;
+      width: max-content;
+    }
+
     @media #{$xs} {
       position: static;
       margin-top: 40px;
@@ -187,6 +233,9 @@
   }
   &-content {
     padding-left: 100px;
+    @media screen and (orientation: landscape) and (max-height: 450px) {
+      position: static;
+    }
     & p {
       color: #5d5d63;
       font-size: 18px;
