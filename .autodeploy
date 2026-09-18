@@ -1,14 +1,27 @@
 #!/bin/bash
- 
+
 set -e
- 
+
+echo "========================================"
+echo "Starting Next.js deployment"
+echo "========================================"
+
+APP_DIR="/home/upwealthmagazine/modaPhotogrphy  "
+
+cd "$APP_DIR"
+
 echo "Installing dependencies..."
 npm ci
- 
-echo "Building Next.js..."
+
+echo "Building Next.js application..."
 npm run build
- 
-echo "Restarting application..."
-pm2 restart my-next-app
- 
-echo "Deployment complete."
+
+echo "Restarting Next.js application..."
+pm2 restart my-next-app --update-env
+
+echo "Saving PM2 process..."
+pm2 save
+
+echo "========================================"
+echo "Deployment completed successfully"
+echo "========================================"
