@@ -12,5 +12,3 @@ echo "Restarting application..."
 pm2 restart my-next-app
  
 echo "Deployment complete."
-
-chmod +x .autodeploy
