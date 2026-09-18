@@ -3,6 +3,7 @@ import Image from "next/image";
 
 // images
 import logo from "@/assets/share/logo.svg";
+import whiteLogo from "@/assets/share/light-logo.svg";
 
 import { Icon } from "../small/Icon";
 import MobileMenus from "./mobileMenus";
@@ -21,10 +22,10 @@ export default function MobileOffcanvas({
     <>
       <div className={`tp-offcanvas-area ${openOffcanvas ? "opened" : ""}`}>
         <div className="tp-offcanvas-wrapper">
-          <div className="flex items-center justify-between mb-30">
+          <div className="mobile-app-menu flex items-center justify-between mb-30">
             <div className="tp-offcanvas-logo">
               <a href="#">
-                <Image src={logo} alt="logo" />
+                <Image src={whiteLogo} alt="logo" />
               </a>
             </div>
             <div className="tp-offcanvas-close">
@@ -52,7 +53,10 @@ export default function MobileOffcanvas({
                   <a href="mailto:modastudio@moda.com">modastudio@moda.com</a>
                 </li>
                 <li>
-                  <a href="#">Avenuq Queen Road 158b, Usa</a>
+                  <a href="#">
+                    A1919 Ninth ave N , <br /> Nashville , <br />
+                    Tennessee, <br /> Tn 37208
+                  </a>
                 </li>
               </ul>
             </div>

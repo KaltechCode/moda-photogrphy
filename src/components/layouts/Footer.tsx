@@ -81,7 +81,7 @@ export default function Footer({ whiteFooter = false, topCls = "" }: IProps) {
                       target="_blank"
                     >
                       1919 Ninth ave N ,<br /> Nashville , <br /> Tennessee,{" "}
-                      <br /> Tn, 37208
+                      <br /> Tn 37208
                     </a>
                   </span>
                 </div>
