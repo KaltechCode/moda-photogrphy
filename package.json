@@ -39,5 +39,6 @@
     "sass": "^1.94.0",
     "tailwindcss": "^4",
     "typescript": "^5"
-  }
+  },
+  "packageManager": "npm@11.2.0"
 }
