@@ -17,7 +17,7 @@ echo "Building Next.js application..."
 npm run build
 
 echo "Restarting Next.js application..."
-pm2 restart my-next-app --update-env
+pm2 restart modaPhotogrphy --update-env
 
 echo "Saving PM2 process..."
 pm2 save
