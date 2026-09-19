@@ -13,7 +13,8 @@ function page() {
         width: "100vw",
       }}
     >
-      <Image src="/coming-soon.gif" alt="" height={300} width={250} />
+      <Image src="/coming-soon.gif" alt="new coming soon image
+      " height={300} width={250} />
     </div>
   );
 }
