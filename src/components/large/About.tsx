@@ -24,7 +24,7 @@ const About = () => {
           <div className="col-xl-5 col-lg-6 col-md-6 order-1 order-xl-0">
             <div className="tp-about-2-thumb-box p-relative">
               <div className="tp-about-2-thumb-main">
-                <img src={"/images/moda.jpg"} alt="ab-img" style={imgStyle} />
+                <img src={"/images/section2img2.webp"} alt="ab-img" style={imgStyle} />
               </div>
             </div>
           </div>
@@ -50,7 +50,7 @@ const About = () => {
             <div className="tp-about-2-right-thumb text-end">
               <img
                 data-speed="auto"
-                src={"/images/section2img2.webp"}
+                src={"/images/moda.jpg"}
                 alt="ab-img"
                 data-lag="0"
                 style={imgStyle}

@@ -12,7 +12,7 @@ npm run build
 
 echo "Deployment build completed."
 
-pm2 restart modaPhotogrphy --update-env
+pm2 restart photogrphy --update-env
 
 pm2 save
 
