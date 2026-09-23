@@ -135,7 +135,7 @@ export default function Footer({ whiteFooter = false, topCls = "" }: IProps) {
             <div className="footer-box-two tp-copyright-2-left text-center text-lg-start">
               <p>
                 <Link href={"/"} className="">
-                  Designed by Kaltech Consultancy | All rights reserved
+                  Designed by Kaltech Consultancy | All rights reserved Team Kaltech
                 </Link>
               </p>
             </div>
