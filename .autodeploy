@@ -4,7 +4,11 @@ set -e
 
 echo "Starting deployment..."
 
-npm i
+rm -rf node_modules package-lock.json .next
+
+echo "Installing dependencies..."
+
+npm install
 
 echo "Building Next.js application..."
 
