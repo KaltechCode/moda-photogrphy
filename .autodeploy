@@ -4,7 +4,7 @@ set -e
 
 echo "Starting deployment..."
 
-npm ci
+npm i
 
 echo "Building Next.js application..."
 
